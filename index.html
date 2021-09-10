@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--
+
+Gamepad API Test
+
+Written in 2013 by Ted Mielczarek <ted@mielczarek.org>
+
+To the extent possible under law, the author(s) have dedicated all copyright and related and neighboring rights to this software to the public domain worldwide. This software is distributed without any warranty.
+
+You should have received a copy of the CC0 Public Domain Dedication along with this software. If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
+
+-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style.css"></script>
+<script type="text/javascript" src="js/gamepadtest.js"></script>
+<script type="text/javascript" src="js/all.js"></script>
+<style>
+</style>
+</head>
+<body>
+  <main>  
+    <div class="conteudo col-lg-8 col-md-8 col-sm-12">
+      <h1 class="gp-titulo">
+        Gamepad Tester <i class="fas fa-gamepad"></i>
+    </h1>
+    <p class="subtitle">Displays info about all gamepads connected to your computer</p>
+    
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <div id="root">
+      <h2 id="start"><i class="fas fa-spin fa-sync" aria-hidden="true"></i> Press a button on your controller to start</h2>
+    </div>
+    </div>
+    <div class="faq order-7">
+      <h2 class='branco'>FAQ</h2>
+      <div class="question">Why isn't my gamepad showing up?</div>
+      <div class="answer">The Gamepad API is still inconsistent across browsers and OSes. Some things to check:
+        <ul>
+          <li>Is the device plugged in / connected via bluetooth</li>
+          <li>Press some buttons. On some devices, only certain buttons will wake up the gamepad API (the shapes on PS3
+            controllers, for instance)</li>
+          <li>Close other apps that may be using the gamepad</li>
+          <li>Restart your web browser</li>
+        </ul>
+      </div>
+      <div class="question">What information is being displayed here?</div>
+      <div class="answer">Multiple gamepads can be connected to a computer at once. This displays them all, and their current state.
+        <ul>
+          <li>Timestamp: the time of the latest update from the gamepad</li>
+          <li>Axis [N]: The current position of the gamepad's analog inputs</li>
+          <li>B [N]: The current on/off position of buttons. Supports analog buttons.</li>
+        </ul>
+      </div>
+      <div class="question">Does vibration work?</div>
+      <div class="answer">Chrome is, so far, the only browser that supports vibration.</div>
+      <div class="question">What about experiemental features?</div>
+      <div class="answer">Features like Pose, HapticActuators, and others, are not widely supported yet.<br>Once browsers start supporting them, this page will be updated.</div>
+      <div class="question">Why are the axis values weird?</div>
+      <div class="answer">Not all controllers are reported the same way, across devices, browsers, and OSes.<br>This site simply displays what the Gamepad API returns.</div>
+    
+    </div>
+    </main>
+
+</body>
+</html>

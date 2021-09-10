@@ -1,0 +1,135 @@
+body{
+    background-color: rgb(255, 255, 255);
+}/* Gamepad */
+main{
+    align-content: center;
+    margin: 10px 0px;
+}
+.conteudo{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    align-content: center;
+    vertical-align: center;
+}
+h1.gp-nome,  h2, p.gp-bt-nome, p.gp-ax-nome{
+    color: #006FB2;
+}
+h1.gp-titulo{
+    font-weight: 900;
+    color: #006FB2;
+}
+.gp-ax-nome{
+    margin: 0;
+}
+.infos{
+    margin: 10px 0px;
+}
+.gp-buttons {
+    text-align: center;
+    margin-left: 1em;
+    line-height: 1.3;
+}
+p.gp-info{
+    line-height: 1.2;
+    margin-bottom: 0px;
+}
+.gp-infos {
+    margin-left: 2em;
+    line-height: 1.1;
+    text-align: center;
+}
+p.gp-bt-nome{
+    display: block;
+    line-height: 20%;
+    text-align: center;
+}
+p.gp-bt-val{
+    line-height: 20%;
+    font-weight: bold;
+    text-align: center;
+}
+.axes {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+
+
+  /*meter*/.axis {
+    min-height: 30px;
+    width: 20vw;
+    min-width: 100px;
+    max-width: 250px;
+    margin: 6px
+  }
+  .axis::-webkit-meter-optimum-value{
+    background-color: rgb(255, 110, 66);
+  }
+  .txt-button{
+    position:relative;
+    left:20px;
+    color: #696969;
+    width: 30px;
+  }
+  .gp-button {
+    width:45px; 
+    color:rgb(6, 9, 197);
+    display: inline-block;
+    text-align: center;
+    padding: 8px 5px 0px 5px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    margin: 5px;
+    background-size: 0% 0%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+.pressed {
+    border: 1px solid #006FB2;
+}
+  
+.touched::after {
+    color:#fff;
+    display: block;
+    position: absolute;
+    margin-top: -0.2em;
+    margin-left: -0.5em;
+    font-size: 0.8em;
+}
+.question{
+    color: #fff;
+    font-size: 22px;
+    font-weight:500;
+}
+.answer{
+    color:#fff;
+    font-size: 14px;
+}
+.btn-primary{
+    background-color:#006FB2;
+}
+.btn-vib{
+    color:#fff;
+    border-radius: 5px;
+}
+.btn-vib:hover{
+    color:rgb(238, 183, 121);
+}
+.faq{
+    position: relative;
+    padding: 1vh 6vw;
+    background-size: 100vw;
+    background-color: #006FB2;
+}
+h2.branco{
+    color: #fff;
+}
+line{
+    stroke:rgb(255,0,0);
+    stroke-width:2;
+}
