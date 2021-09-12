@@ -83,12 +83,9 @@ function addgamepad(gamepad) {
     a2.className = "ax col-6";
     var rs = document.createElement("p");
     rs.className = "gp-ax-nome";
-    rs.innerHTML = "Axis " + i;
-    var svg = document.createElementNS("svg");
-    svg.setAttribute({'height':200, 'width':200,'version':1.0});
-    var line = document.createCircle('circle',10,10,4,{color:'red'}); 
+    rs.innerHTML = "Axis " + i; 
     //
-    svg.appendChild(line);  
+  
     e = document.createElement("meter");
     e.className = "axis";
     //e.id = "a" + i;
@@ -97,7 +94,6 @@ function addgamepad(gamepad) {
     e.setAttribute("value", "0");
     e.innerHTML = i;
     a2.appendChild(rs);
-    a2.appendChild(svg);
     a2.appendChild(e);
     a.appendChild(a2);
     
